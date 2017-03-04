@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRE Vocabulary Flash Cards</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>GRE Vocabulary Flash Cards</h1>
+        <div class="card" data-bind="click: nextWord()">
+            <p data-bind="text: viewModel.currentWord().word"></p>
+            <p data-bind="text: viewModel.currentWord().pos"></p>
+
+            <p>Answer: <span data-bind="text: viewModel.currentWord().def"></span></p>
+
+        </div>
+
+    </div>
+
+<script src="lib/knockout-3.2.0.js"></script>
+<script src="app.js"></script>
+</body>
+
