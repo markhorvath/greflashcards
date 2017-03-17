@@ -8,6 +8,14 @@ body {
 }
 ul {
     height: 100px;
+    list-style-type: upper-alpha;
+}
+ul li {
+    border: solid;
+    margin: 5px;
+}
+li:hover {
+    background-color: yellow;
 }
 .wrapper {
     height: 100%;
@@ -16,7 +24,7 @@ ul {
 .card {
     border: 5px solid;
     width: 500px;
-    height: 200px;
+    height: 300px;
     margin-left: 30%;
 }
 #button {

@@ -711,7 +711,7 @@ var ViewModel = function() {
     this.vocabArray = ko.observableArray([]);
     this.currentWord = ko.observable("");
     this.showCard = ko.observable(false);
-    this.answerArray = [];
+    this.answerArray = ko.observableArray([]);
     this.allAnswersArray = [];
 
     //copy original model
@@ -735,12 +735,12 @@ var ViewModel = function() {
     this.currentWord(new Word(this.getWord));
 
     this.getAnswers = function() {
+        this.answerArray([]);
         this.answerArray.push(this.currentWord().def);
-        for (i = 0; i < 3; i++) {
+        for (i = 0; i < 4; i++) {
             var randomInt = Math.floor(Math.random() * this.allAnswersArray.length);
             this.answerArray.push(this.allAnswersArray[randomInt]);
         };
-        console.log(this.answerArray);
     };
 
     this.nextWord = function() {
