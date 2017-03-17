@@ -6,17 +6,19 @@ body {
     margin: 0;
     padding: 0;
 }
+ul {
+    height: 100px;
+}
 .wrapper {
     height: 100%;
     width: 80%;
 }
 .card {
     border: 5px solid;
-    width: 50%;
-    height: 80%;
+    width: 500px;
+    height: 200px;
     margin-left: 30%;
 }
 #button {
-    position: absolute;
-    background-color: red;
+
 }

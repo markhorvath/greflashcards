@@ -11,12 +11,13 @@
         <h1>GRE Vocabulary Flash Cards</h1>
         <input type ="button" value="START" data-bind="click: startCard()">
         <div class="card" data-bind="visible: showCard">
-            <p data-bind="text: viewModel.currentWord().word"></p>
-            <p data-bind="text: viewModel.currentWord().pos"></p>
-
-            <p>Answer: <span data-bind="text: viewModel.currentWord().def"></span></p>
-
+            <p data-bind="text: currentWord().word"></p>
+            <p data-bind="text: currentWord().pos"></p>
+            <ul data-bind="foreach: answerArray">
+                <li data-bind="text: $data"></li>
+            </ul>
         </div>
+
         <input type ="button" id="button" value="NEXT" data-bind="click: nextWord()">
 
     </div>

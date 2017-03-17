@@ -208,7 +208,7 @@ var model = [{
     {
         id: 36,
         word: 'confound',
-        definition: 'Confuse, frustrat; mix up or make worse',
+        definition: 'Confuse, frustrate; mix up or make worse',
         pos: ['verb']
     },
     {
@@ -711,27 +711,37 @@ var ViewModel = function() {
     this.vocabArray = ko.observableArray([]);
     this.currentWord = ko.observable("");
     this.showCard = ko.observable(false);
-    this.answerArray = ko.observableArray([]);
-    this.allAnswersArray = ko.observableArray([]);
+    this.answerArray = [];
+    this.allAnswersArray = [];
 
+    //copy original model
     var modelLength = model.length;
     for(var i = 0; i < modelLength; i++) {
-        self.vocabArray.push(model[i]);
+        this.vocabArray().push(model[i]);
+    };
+    //create array of all definitions
+    for(var i = 0; i < modelLength; i++) {
+        this.allAnswersArray.push(model[i].definition);
     };
 
-    this.arrayLen = self.vocabArray().length;
-    this.getWord = self.vocabArray()[Math.floor(Math.random() * self.arrayLen)];
+    this.arrayLen = this.vocabArray().length;
+    this.getWord = this.vocabArray()[Math.floor(Math.random() * this.arrayLen)];
 
 
     this.startCard = function() {
         this.showCard(true);
     };
 
+    this.currentWord(new Word(this.getWord));
+
     this.getAnswers = function() {
         this.answerArray.push(this.currentWord().def);
+        for (i = 0; i < 3; i++) {
+            var randomInt = Math.floor(Math.random() * this.allAnswersArray.length);
+            this.answerArray.push(this.allAnswersArray[randomInt]);
+        };
+        console.log(this.answerArray);
     };
-
-    this.currentWord(new Word(this.getWord));
 
     this.nextWord = function() {
         this.index = [Math.floor(Math.random() * self.arrayLen)];
