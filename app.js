@@ -710,23 +710,36 @@ var ViewModel = function() {
     var self = this;
     this.vocabArray = ko.observableArray([]);
     this.currentWord = ko.observable("");
+    this.showCard = ko.observable(false);
+    this.answerArray = ko.observableArray([]);
+    this.allAnswersArray = ko.observableArray([]);
+
     var modelLength = model.length;
     for(var i = 0; i < modelLength; i++) {
         self.vocabArray.push(model[i]);
-    }
+    };
+
     this.arrayLen = self.vocabArray().length;
     this.getWord = self.vocabArray()[Math.floor(Math.random() * self.arrayLen)];
 
 
+    this.startCard = function() {
+        this.showCard(true);
+    };
 
-    this.currentWord(new Word(self.getWord));
+    this.getAnswers = function() {
+        this.answerArray.push(this.currentWord().def);
+    };
+
+    this.currentWord(new Word(this.getWord));
 
     this.nextWord = function() {
         this.index = [Math.floor(Math.random() * self.arrayLen)];
         this.getWord = this.vocabArray()[this.index];
         console.log(this.index)
         this.currentWord(new Word(this.getWord));
-    }
+        this.getAnswers();
+    };
 };
 
 viewModel = new ViewModel();

@@ -9,13 +9,15 @@
 <body>
     <div class="wrapper">
         <h1>GRE Vocabulary Flash Cards</h1>
-        <div class="card" data-bind="click: nextWord()">
+        <input type ="button" value="START" data-bind="click: startCard()">
+        <div class="card" data-bind="visible: showCard">
             <p data-bind="text: viewModel.currentWord().word"></p>
             <p data-bind="text: viewModel.currentWord().pos"></p>
 
             <p>Answer: <span data-bind="text: viewModel.currentWord().def"></span></p>
 
         </div>
+        <input type ="button" id="button" value="NEXT" data-bind="click: nextWord()">
 
     </div>
 
