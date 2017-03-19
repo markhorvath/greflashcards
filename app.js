@@ -863,6 +863,7 @@ var ViewModel = function() {
     this.showCard = ko.observable(false);
     this.answerArray = ko.observableArray([]);
     this.allAnswersArray = [];
+    this.arrayLen = ko.observable(model.length);
 
     //copy original model
     var modelLength = model.length;
@@ -874,15 +875,21 @@ var ViewModel = function() {
         this.allAnswersArray.push(model[i].definition);
     };
 
-    this.arrayLen = this.vocabArray().length;
-    this.getWord = this.vocabArray()[Math.floor(Math.random() * this.arrayLen)];
 
+    this.getWord = function() {
+        self.arrayLen = self.vocabArray().length;
+        var randomIndex = Math.floor(Math.random() * self.arrayLen);
+        var newWord = this.vocabArray()[randomIndex];
+        self.vocabArray().splice(randomIndex, 1);
+        console.log(self.arrayLen);
+        return newWord;
+    };
 
     this.startCard = function() {
         this.showCard(true);
     };
 
-    this.currentWord(new Word(this.getWord));
+    this.currentWord(new Word(this.getWord()));
     //Populate an observable array of possible answers, then add the correct answer for the current word at a random index between 0-4
     this.getAnswers = function() {
         this.answerArray([]);
@@ -891,15 +898,12 @@ var ViewModel = function() {
             this.answerArray.push(this.allAnswersArray[randomInt]);
         };
         var correctAnswer = self.currentWord().def;
-        //
-        this.answerArray.splice(Math.floor(Math.random() * 4), 0, correctAnswer);
+        var test = Math.floor(Math.random() * 4);
+        this.answerArray.splice(test, 0, correctAnswer);
     };
 
     this.nextWord = function() {
-        this.index = [Math.floor(Math.random() * self.arrayLen)];
-        this.getWord = this.vocabArray()[this.index];
-        console.log(this.index)
-        this.currentWord(new Word(this.getWord));
+        this.currentWord(new Word(this.getWord()));
         this.getAnswers();
     };
 };
