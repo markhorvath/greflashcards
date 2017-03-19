@@ -696,6 +696,156 @@ var model = [{
         word: 'euphemism',
         definition: 'Substitution of a mild, inoffensive, or indirect expression for one that is considered offensive or too direct',
         pos: ['noun']
+    },
+    {
+        id: 118,
+        word: 'exonerate',
+        definition: 'Clear from blame or accusation; free from a responsibility',
+        pos: ['verb']
+    },
+    {
+        id: 119,
+        word: 'glower',
+        definition: 'Stare in an angry, sullen way',
+        pos: ['verb']
+    },
+    {
+        id: 120,
+        word: 'gestation',
+        definition: 'Pregnancy; the period from conception until birth of an animal or (metaphorically) of an idea or plan',
+        pos: ['noun']
+    },
+    {
+        id: 121,
+        word: 'glacial',
+        definition: 'Pertaining to glaciers; cold, icy, slow, unsympathetic',
+        pos: ['adj']
+    },
+    {
+        id: 122,
+        word: 'expedient',
+        definition: 'Suitable, proper; effective often at the expense of ethics or other considerations',
+        pos: ['adj']
+    },
+    {
+        id: 123,
+        word: 'expurgate',
+        definition: 'Censor; remove objectionable or offensive parts',
+        pos: ['verb']
+    },
+    {
+        id: 124,
+        word: 'extemporaneous',
+        definition: 'Done without preparation (esp. of a speech), or with some preparation but no notes; improvised, done on the spur of the moment',
+        pos: ['adj']
+    },
+    {
+        id: 125,
+        word: 'fallow',
+        definition: 'Left unplanted (of land); not in use',
+        pos: ['adj']
+    },
+    {
+        id: 126,
+        word: 'fastidious',
+        definition: 'Excessively particular, difficult to please; painstaking, meticulous, requiring excessive attention to detail',
+        pos: ['adj']
+    },
+    {
+        id: 127,
+        word: 'fatuous',
+        definition: 'Foolish, silly, esp. in a smug or complacent manner',
+        pos: ['adj']
+    },
+    {
+        id: 128,
+        word: 'fawn'
+        pos: ['verb'],
+        definition: 'Show affection or try to please in the manner of a dog; try to win favor through flattery and submissive behaviour'
+    },
+    {
+        id: 129,
+        word: 'fervid',
+        pos: ['adj'],
+        definition: 'Very hot; heated in passion or enthusiasm'
+    },
+    {
+        id: 130,
+        word: 'fecund',
+        pos: ['adj'],
+        definition: 'Fruitful, fertile; capable of abundantly producing offspring, vegatation, or creative or intellectual work'
+    },
+    {
+        id: 131,
+        word: 'euphony',
+        pos: ['noun'],
+        definition: 'Pleasing or sweet sound, esp. as formed by a harmonious use of words'
+    },
+    {
+        id: 132,
+        word: 'exigent',
+        pos: ['adj'],
+        definition: 'Requiring immediate attention, action, or aid; excessively demanding'
+    },
+    {
+        id: 133,
+        word: 'felicitous',
+        pos: ['adj'],
+        definition: 'Admirably appropriate, very well-suited for the occasion; pleasant, fortunate, marked by happiness'
+    },
+    {
+        id: 134,
+        word: 'faction',
+        pos: ['noun'],
+        definition: 'Group or clique within a larger organization; party strife and dissension'
+    },
+    {
+        id: 135,
+        word: 'fetid',
+        pos: ['adj'],
+        definition: 'Stinking; having an offensive smell'
+    },
+    {
+        id: 136,
+        word: 'fledgling',
+        pos: ['noun', 'adj'],
+        definition: 'A young bird that has just recently gotten its feathers, an inexperienced person (noun); new or inexperienced (adj)'
+    },
+    {
+        id: 137,
+        word: 'florid',
+        pos: ['adj'],
+        definition: 'Reddish or rosy; flowery, showy, or excessively fancy'
+    },
+    {
+        id: 138,
+        word: 'flout',
+        pos: ['verb'],
+        definition: 'Treat with disdain, contempt, or scorn (usually of rules)'
+    },
+    {
+        id: 139,
+        word: 'fluke',
+        pos: ['noun'],
+        definition: 'Stroke of luck, something accidentally successful'
+    },
+    {
+        id: 140,
+        word: 'forage',
+        pos: ['verb'],
+        definition: 'Wander in search of; rummage, hunt, make a raid'
+    },
+    {
+        id: 141,
+        word: 'ford',
+        pos: ['noun', 'verb'],
+        definition: 'Place where a river or similar body of water is shallow enough to walk or ride a vehicle across (noun); to cross at such a place (verb)'
+    },
+    {
+        id: 142,
+        word: 'forestall',
+        pos: ['verb'],
+        definition: 'Delay, hinder, prevent by taking action beforehand'
     }
 ];
 
