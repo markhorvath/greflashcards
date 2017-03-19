@@ -759,7 +759,7 @@ var model = [{
     },
     {
         id: 128,
-        word: 'fawn'
+        word: 'fawn',
         pos: ['verb'],
         definition: 'Show affection or try to please in the manner of a dog; try to win favor through flattery and submissive behaviour'
     },
@@ -883,14 +883,16 @@ var ViewModel = function() {
     };
 
     this.currentWord(new Word(this.getWord));
-
+    //Populate an observable array of possible answers, then add the correct answer for the current word at a random index between 0-4
     this.getAnswers = function() {
         this.answerArray([]);
-        this.answerArray.push(this.currentWord().def);
         for (i = 0; i < 4; i++) {
             var randomInt = Math.floor(Math.random() * this.allAnswersArray.length);
             this.answerArray.push(this.allAnswersArray[randomInt]);
         };
+        var correctAnswer = self.currentWord().def;
+        //
+        this.answerArray.splice(Math.floor(Math.random() * 4), 0, correctAnswer);
     };
 
     this.nextWord = function() {
