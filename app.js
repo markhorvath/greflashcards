@@ -846,6 +846,192 @@ var model = [{
         word: 'forestall',
         pos: ['verb'],
         definition: 'Delay, hinder, prevent by taking action beforehand'
+    },
+    {
+        id: 143,
+        word: 'fortuitous',
+        pos: ['adj'],
+        definition: 'Happening by chance; lucky'
+    },
+    {
+        id: 144,
+        word: 'fracas',
+        pos: ['noun'],
+        definition: 'Noisy disturbance or fight; brawl'
+    },
+    {
+        id: 145,
+        word: 'fractious',
+        pos: ['adj'],
+        definition: 'Unruly, troublemaking; irritable'
+    },
+    {
+        id: 146,
+        word: 'frenetic',
+        pos: ['adj'],
+        definition: 'Wildly excited, frantic, distracted'
+    },
+    {
+        id: 147,
+        word: 'fulminate',
+        pos: ['verb'],
+        definition: 'Attack verbally in a vehement, thunderous way; explode, detonate'
+    },
+    {
+        id: 148,
+        word: 'furtive',
+        pos: ['adj'],
+        definition: 'Done secretly; stealthy, sly, shifty'
+    },
+    {
+        id: 149,
+        word: 'gambol',
+        pos: ['verb'],
+        definition: 'Frolic; skip or leap playfully'
+    },
+    {
+        id: 150,
+        word: 'garner',
+        pos: ['verb'],
+        definition: 'Gather and store; amass, collect'
+    },
+    {
+        id: 151,
+        word: 'goad',
+        pos: ['verb'],
+        definition: 'Spur on, stimulate, encourage; urge on (as cattle) with a pointed or electrically charged stick'
+    },
+    {
+        id: 152,
+        word: 'gouge',
+        pos: ['noun', 'verb'],
+        definition: "Scooping or digging tool, like a chisel, or a hole made with such a tool; cut or scoop out; force out a person's eye with one's thumb; swindle, extort money from"
+    },
+    {
+        id: 153,
+        word: 'graft',
+        pos: ['verb', 'noun'],
+        definition: "Insert part of a plant into another plant, where it continues to grow; join living tissue (such as skin) to part of the body where it will continue to live and grow; attach as if by grafting; the part so grafted (as in a graft of skin); the act of acquiring money or other benefits through illegal means, esp. by abusing one's power"
+    },
+    {
+        id: 154,
+        word: 'grandiloquent',
+        pos: ['adj'],
+        definition: 'Relating to lofty speech, esp. to the point of being pompous, overblown, bombastic'
+    },
+    {
+        id: 155,
+        word: 'grandstand',
+        pos: ['verb'],
+        definition: 'Perform showily in an attempt to impress onlookers'
+    },
+    {
+        id: 156,
+        word: 'grating',
+        pos: ['adj'],
+        definition: 'Irritating; harsh or discordant (of a noise); scraping'
+    },
+    {
+        id: 157,
+        word: 'grievous',
+        pos: ['adj'],
+        definition: 'Causing grief or suffering; very serious, grave; flagrant, outrageous'
+    },
+    {
+        id: 158,
+        word: 'grouse',
+        pos: ['verb', 'noun'],
+        definition: 'Complain or grumble; a reason for complaint'
+    },
+    {
+        id: 159,
+        word: 'grovel',
+        pos: ['verb'],
+        definition: "Creep or crawl with one's face to the ground, prostrate oneself as a token of subservience, degrade or abase oneself"
+    },
+    {
+        id: 160,
+        word: 'halcyon',
+        pos: ['adj'],
+        definition: 'Calm and peaceful, carefree; prosperous, successful, happy'
+    },
+    {
+        id: 161,
+        word: 'hallmark',
+        pos: ['noun'],
+        definition: 'A mark of indication of quality, purity, genuineness, etc.; any distinguishing characteristic'
+    },
+    {
+        id: 162,
+        word: 'hapless',
+        pos: ['adj'],
+        definition: 'Unlucky, unfortunate'
+    },
+    {
+        id: 163,
+        word: 'harangue',
+        pos: ['noun', 'verb'],
+        definition: 'Long, intense verbal attack, esp. when delivered publicly; to speak to in a forceful way'
+    },
+    {
+        id: 164,
+        word: 'harrow',
+        pos: ['noun', 'verb'],
+        definition: 'Farming tool that breaks up soil; painfully disturb or distress'
+    },
+    {
+        id: 165,
+        word: 'hegemony',
+        pos: ['noun'],
+        definition: 'Domination, authority; influence by one country over others socially, culturally, economically, etc'
+    },
+    {
+        id: 166,
+        word: 'hermetic',
+        pos: ['adj'],
+        definition: 'Airtight, sealed, isolated; reclusive; pertaining to alchemy, occult'
+    },
+    {
+        id: 167,
+        word: 'hew',
+        pos: ['verb'],
+        definition: 'Strike, chop, or hack (as with an axe, sword, etc.); make or shape something (such as a statue) with a cutting tool'
+    },
+    {
+        id: 168,
+        word: 'hoary',
+        pos: ['adj'],
+        definition: 'Very old, gray or white as from old age'
+    },
+    {
+        id: 169,
+        word: 'homage',
+        pos: ['noun'],
+        definition: 'Honor or respect demonstrated publicly'
+    },
+    {
+        id: 170,
+        word: 'husband',
+        pos: ['verb'],
+        definition: 'Manage prudently, sparingly, or economically; conserve'
+    },
+    {
+        id: 171,
+        word: 'iconoclast',
+        pos: ['noun'],
+        definition: 'Attacker of cherished beliefs or institutions'
+    },
+    {
+        id: 172,
+        word: 'idolatry',
+        pos: ['noun'],
+        definition: 'Idol worship; excessive or unthinking devotion or adoration'
+    },
+    {
+        id: 173,
+        word: 'idyllic',
+        pos: ['adj'],
+        definition: 'Presenting a positive, peaceful view of rural life; pleasant in a natural, simple way; a happy, enjoyable experience'
     }
 ];
 
@@ -881,21 +1067,26 @@ var ViewModel = function() {
         var randomIndex = Math.floor(Math.random() * self.arrayLen);
         var newWord = this.vocabArray()[randomIndex];
         self.vocabArray().splice(randomIndex, 1);
-        console.log(self.arrayLen);
+        console.log(self.arrayLen + "h");
         return newWord;
     };
 
     this.startCard = function() {
-        this.showCard(true);
+        this.showCard(!this.showCard());
     };
 
-    this.currentWord(new Word(this.getWord()));
+    //this.currentWord(new Word(this.getWord()));
     //Populate an observable array of possible answers, then add the correct answer for the current word at a random index between 0-4
     this.getAnswers = function() {
         this.answerArray([]);
         for (i = 0; i < 4; i++) {
             var randomInt = Math.floor(Math.random() * this.allAnswersArray.length);
-            this.answerArray.push(this.allAnswersArray[randomInt]);
+            //logic to make sure there are no duplicate answers
+            if(this.answerArray.indexOf(this.allAnswersArray[randomInt]) == -1) {
+                this.answerArray.push(this.allAnswersArray[randomInt]);
+            } else {
+                i -= 1;
+            };
         };
         var correctAnswer = self.currentWord().def;
         var test = Math.floor(Math.random() * 4);
