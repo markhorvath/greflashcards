@@ -1032,6 +1032,90 @@ var model = [{
         word: 'idyllic',
         pos: ['adj'],
         definition: 'Presenting a positive, peaceful view of rural life; pleasant in a natural, simple way; a happy, enjoyable experience'
+    },
+    {
+        id: 174,
+        word: 'ignoble',
+        pos: ['adj'],
+        definition: 'Not noble; having mean, base, low motives; low quality'
+    },
+    {
+        id: 175,
+        word: 'imbue',
+        pos: ['verb'],
+        definition: 'Permeate or saturate, as dye in a fabric; influence throughout'
+    },
+    {
+        id: 176,
+        word: 'immutable',
+        pos: ['adj'],
+        definition: 'Unchangeable'
+    },
+    {
+        id: 177,
+        word: 'impasse',
+        pos: ['noun'],
+        definition: 'Position or road from which there is no escape; deadlock'
+    },
+    {
+        id: 178,
+        word: 'impassive',
+        pos: ['adj'],
+        definition: 'Not having or not showing physical feeling or emotion'
+    },
+    {
+        id: 179,
+        word: 'impecunious',
+        pos: ['adj'],
+        definition: 'Poor, without money'
+    },
+    {
+        id: 180,
+        word: 'imperious',
+        pos: ['adj'],
+        definition: 'Commanding, domineering; acting like a high-ranking person; urgent'
+    },
+    {
+        id: 181,
+        word: 'impermeable',
+        pos: ['adj'],
+        definition: 'Impassable, not allowing passage through (such as by a liquid)'
+    },
+    {
+        id: 182,
+        word: 'imperturbable',
+        pos: ['adj'],
+        definition: 'Calm, not able to be upset or agitated'
+    },
+    {
+        id: 183,
+        word: 'impervious',
+        pos: ['adj'],
+        definition: 'Impenetrable, not able to be harmed or emotionally disturbed'
+    },
+    {
+        id: 184,
+        word: 'impetuous',
+        pos: ['adj'],
+        definition: 'Passionately impulsive, marked by sudden, hasty emotion; forceful, violent'
+    },
+    {
+        id: 185,
+        word: 'impious',
+        pos: ['adj'],
+        definition: 'Not religious, lacking reverence, ungodly'
+    },
+    {
+        id: 186,
+        word: 'implacable',
+        pos: ['adj'],
+        definition: 'Relentless, unstoppable; not able to be appeased, calmed, or satisfied'
+    },
+    {
+        id: 187,
+        word: 'imprecation',
+        pos: ['noun'],
+        definition: 'Curse, prayer for harm to come to someone'
     }
 ];
 
@@ -1050,6 +1134,11 @@ var ViewModel = function() {
     this.answerArray = ko.observableArray([]);
     this.allAnswersArray = [];
     this.arrayLen = ko.observable(model.length);
+    this.correctCount = 0;
+    this.correctAnswers = ko.observable(this.correctCount);
+    this.wrongCount = 0;
+    this.wrongAnswers = ko.observable(this.wrongCount);
+    this.percentage = ko.observable((this.correctCount / (this.correctCount + this.wrongCount)) * 100);
 
     //copy original model
     var modelLength = model.length;
@@ -1067,7 +1156,6 @@ var ViewModel = function() {
         var randomIndex = Math.floor(Math.random() * self.arrayLen);
         var newWord = this.vocabArray()[randomIndex];
         self.vocabArray().splice(randomIndex, 1);
-        console.log(self.arrayLen + "h");
         return newWord;
     };
 
@@ -1096,6 +1184,21 @@ var ViewModel = function() {
     this.nextWord = function() {
         this.currentWord(new Word(this.getWord()));
         this.getAnswers();
+    };
+
+    this.checkAnswer = function() {
+        var clickedAnswer = this.toString();
+        if (clickedAnswer == self.currentWord().def){
+            console.log(clickedAnswer);
+            self.correctCount += 1;
+            self.correctAnswers(self.correctCount);
+            self.percentage(Number((self.correctCount / (self.correctCount + self.wrongCount)) * 100).toFixed(2));
+        } else {
+            self.wrongCount += 1;
+            self.wrongAnswers(self.wrongCount);
+            self.percentage(Number((self.correctCount / (self.correctCount + self.wrongCount)) * 100).toFixed(2));
+        };
+        //if (this.answerArray[index] == )
     };
 };
 

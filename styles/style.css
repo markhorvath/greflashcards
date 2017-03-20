@@ -4,7 +4,7 @@ h1,p {
 body {
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 20px 100px;
 }
 ul {
     height: 100px;
@@ -29,4 +29,7 @@ li:hover {
 }
 #button {
 
+}
+#count {
+    float: right;
 }
