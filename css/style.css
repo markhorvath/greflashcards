@@ -1,0 +1,53 @@
+html {
+    display: auto;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #ddd;
+    padding-left: 0;
+    padding-right: 0;
+    display: auto;
+}
+ul {
+    list-style-type: upper-alpha;
+}
+li {
+    border: solid grey;
+    margin: 3px;
+    padding-left: 5px;
+}
+li:hover {
+    background-color: yellow;
+}
+.btn-lg {
+    margin-left: 20px;
+    margin-top: 160px;
+}
+.card {
+    font-size: 16px;
+    border: solid grey;
+    box-shadow: 6px 6px 8px #777;
+    margin-top: 50px;
+}
+.stats {
+    background-color: #333;
+    color: #ddd;
+    margin-top: 160px;
+}
+#word {
+    font-size: 24px;
+    text-align: center;
+}
+#pos {
+    text-align: center;
+}
+
+@media screen and (orientation:landscape) {
+
+}

@@ -1,5 +1,7 @@
 var viewModel;
 var vocabArray;
+var choice;
+var answer;
 
 var model = [{
         id: 1,
