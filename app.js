@@ -1116,6 +1116,168 @@ var model = [{
         word: 'imprecation',
         pos: ['noun'],
         definition: 'Curse, prayer for harm to come to someone'
+    },
+    {
+        id: 188,
+        word: 'impugn',
+        pos: ['verb'],
+        definition: 'Attack the truth or integrity of'
+    },
+    {
+        id: 189,
+        word: 'impute',
+        pos: ['verb'],
+        definition: 'Credit, attribute; lay blame or responsibility for (sometimes falsely'
+    },
+    {
+        id: 190,
+        word: 'incarnadine',
+        pos: ['adj', 'noun'],
+        definition: 'Blood red or flesh-colored'
+    },
+    {
+        id: 191,
+        word: 'inconstancy',
+        pos: ['noun'],
+        definition: 'Fickleness, unreliability; the state of changing without good reason'
+    },
+    {
+        id: 192,
+        word: 'inculcate',
+        pos: ['verb'],
+        definition: 'Teach persistently, implant (an idea) in a person'
+    },
+    {
+        id: 193,
+        word: 'indefatigable',
+        pos: ['adj'],
+        definition: 'Untiring, not able to become fatigued'
+    },
+    {
+        id: 194,
+        word: 'indigence',
+        pos: ['noun'],
+        definition: 'Extreme poverty'
+    },
+    {
+        id: 195,
+        word: 'indolent',
+        pos: ['adj'],
+        definition: 'Lazy, slothful'
+    },
+    {
+        id: 196,
+        word: 'inert',
+        pos: ['adj'],
+        definition: 'Inactive; having little or no power to move'
+    },
+    {
+        id: 197,
+        word: 'inexorable',
+        pos: ['adj'],
+        definition: 'Relentless, unyielding; not moved by pleading'
+    },
+    {
+        id: 198,
+        word: 'infallible',
+        pos: ['adj'],
+        definition: 'Incapable of error; certain'
+    },
+    {
+        id: 199,
+        word: 'ingrate',
+        pos: ['noun'],
+        definition: 'Ungrateful person'
+    },
+    {
+        id: 200,
+        word: 'ingratiate',
+        pos: ['verb'],
+        definition: 'Make an effort to gain favor with'
+    },
+    {
+        id: 201,
+        word: 'inimical',
+        pos: ['adj'],
+        definition: 'Hostile, adverse, harmful'
+    },
+    {
+        id: 202,
+        word: 'iniquity',
+        pos: ['noun'],
+        definition: 'Injustice, wickedness, sin'
+    },
+    {
+        id: 203,
+        word: 'inordinate',
+        pos: ['adj'],
+        definition: 'Excessive, not within proper limits, unrestrained'
+    },
+    {
+        id: 204,
+        word: 'inquest',
+        pos: ['noun'],
+        definition: "Legal or judicial inquiry, especially before a jury and esp. made by a coroner into the cause of someone's death; the results of such an inquiry"
+    },
+    {
+        id: 205,
+        word: 'insensible',
+        pos: ['adj'],
+        definition: 'Incapable of feeling; unconscious, unaware'
+    },
+    {
+        id: 206,
+        word: 'insinuate',
+        pos: ['verb'],
+        definition: "Hint, suggest slyly; introduce (an idea) into someone's mind in a subtle, artful way"
+    },
+    {
+        id: 207,
+        word: 'insipid',
+        pos: ['adj'],
+        definition: 'Dull, stale, lacking taste or interest'
+    },
+    {
+        id: 208,
+        word: 'insular',
+        pos: ['adj'],
+        definition: 'narrow-minded, provincial; pertaining to an island; detached, standing alone'
+    },
+    {
+        id: 209,
+        word: 'insurrection',
+        pos: ['noun'],
+        definition: 'Rebellion or revolt against a government or similarly established authority'
+    },
+    {
+        id: 210,
+        word: 'inter',
+        pos: ['verb'],
+        definition: 'Bury (a dead body) or place in a tomb'
+    },
+    {
+        id: 211,
+        word: 'interplay',
+        pos: ['noun'],
+        definition: 'Interaction, reciprocal relationship or influence'
+    },
+    {
+        id: 212,
+        word: 'interregnum',
+        pos: ['noun'],
+        definition: 'A time in between two reigns or regimes during which there is no ruler; a period during which government does not function; any period of freedom from authority or break in interruption in a series'
+    },
+    {
+        id: 213,
+        word: 'intransigent',
+        pos: ['adj'],
+        definition: 'Refusing to compromise, inflexible, having extreme attitudes'
+    },
+    {
+        id: 214,
+        word: 'inundate',
+        pos: ['verb'],
+        definition: 'Flood, cover with water, overwhelm'
     }
 ];
 
@@ -1193,12 +1355,14 @@ var ViewModel = function() {
             self.correctCount += 1;
             self.correctAnswers(self.correctCount);
             self.percentage(Number((self.correctCount / (self.correctCount + self.wrongCount)) * 100).toFixed(2));
+            setTimeout(function() {
+                self.nextWord();
+            }, 1000);
         } else {
             self.wrongCount += 1;
             self.wrongAnswers(self.wrongCount);
             self.percentage(Number((self.correctCount / (self.correctCount + self.wrongCount)) * 100).toFixed(2));
         };
-        //if (this.answerArray[index] == )
     };
 };
 

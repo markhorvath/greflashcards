@@ -28,7 +28,7 @@ li:hover {
     margin-left: 30%;
 }
 #button {
-
+    position: relative;
 }
 #count {
     float: right;
