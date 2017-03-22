@@ -1290,7 +1290,7 @@ var ViewModel = function() {
     var self = this;
     this.vocabArray = ko.observableArray([]);
     this.currentWord = ko.observable("");
-    this.showCard = ko.observable(false);
+    this.show = ko.observable(false);
     this.answerArray = ko.observableArray([]);
     this.allAnswersArray = [];
     this.arrayLen = ko.observable(model.length);
@@ -1298,8 +1298,10 @@ var ViewModel = function() {
     this.correctAnswers = ko.observable(this.correctCount);
     this.wrongCount = 0;
     this.wrongAnswers = ko.observable(this.wrongCount);
-    this.percentage = ko.observable((this.correctCount / (this.correctCount + this.wrongCount)) * 100);
     this.wrongWordsArray = ko.observableArray([]);
+    this.percentage = ko.computed(function() {
+        return (this.correctCount / (this.correctCount + this.wrongCount)) * 100;
+    };
 
     //copy original model
     var modelLength = model.length;
@@ -1310,7 +1312,6 @@ var ViewModel = function() {
     for(var i = 0; i < modelLength; i++) {
         this.allAnswersArray.push(model[i].definition);
     };
-
 
     this.getWord = function() {
         self.arrayLen = self.vocabArray().length;
@@ -1352,14 +1353,14 @@ var ViewModel = function() {
             console.log(clickedAnswer);
             self.correctCount += 1;
             self.correctAnswers(self.correctCount);
-            self.percentage(Number((self.correctCount / (self.correctCount + self.wrongCount)) * 100).toFixed(1));
+            self.percentage.toFixed(1);
             setTimeout(function() {
                 self.nextWord();
             }, 1000);
         } else {
             self.wrongCount += 1;
             self.wrongAnswers(self.wrongCount);
-            self.percentage(Number((self.correctCount / (self.correctCount + self.wrongCount)) * 100).toFixed(1));
+            self.percentage.toFixed(1);
             if (self.wrongWordsArray.indexOf(self.currentWord()) == -1) {
                 self.wrongWordsArray.push(self.currentWord());
             };

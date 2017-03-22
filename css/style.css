@@ -3,7 +3,9 @@ html {
 }
 body {
     font-family: sans-serif;
+    text-decoration-color: #0A1612;
     margin: 0;
+    background-color: #C5C1C0;
 }
 
 header {
@@ -18,7 +20,7 @@ ul {
     list-style-type: upper-alpha;
 }
 li {
-    border: solid grey;
+    border: solid #0A1612;
     margin: 3px;
     padding-left: 5px;
 }
@@ -28,17 +30,20 @@ li:hover {
 .btn-lg {
     margin-left: 20px;
     margin-top: 160px;
+    background-color: #F7CE3E;
 }
 .card {
     font-size: 16px;
-    border: solid grey;
+    border: solid #0A1612;
+    background-color: white;
     box-shadow: 6px 6px 8px #777;
     margin-top: 50px;
 }
 .stats {
-    background-color: #333;
-    color: #ddd;
+    background-color: #F7CE3E;
+    color: #0A1612;
     margin-top: 160px;
+    font-size: larger;
 }
 #word {
     font-size: 24px;
