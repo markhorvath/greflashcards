@@ -3,9 +3,12 @@
 <head>
     <title>GRE Vocabulary Flash Cards</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<!--    <link rel="stylesheet" href="css/reset.css" type="text/css"> -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/style.css" type="text/css">
+<!--     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
 </head>
 <body>
         <header class="container-fluid">
@@ -13,13 +16,17 @@
         </header>
         <!-- <input type ="button" value="START" data-bind="click: startCard()"> -->
         <div class="container-fluid">
-            <aside class="col-sm-2">
-                <div class="stats">
-                    <p>Correct: <span data-bind="text: correctAnswers()"></span></p>
-                    <p>Incorrect: <span data-bind="text: wrongAnswers()"></span></p>
-                    <p>Percent Correct: <span data-bind="text: percentage()"></span>%</p>
+            <div class="row-fluid">
+                <div class="col-lg-4">
+                    Correct: <span data-bind="text: correctAnswers()"></span>
                 </div>
-            </aside>
+                <div class="col-lg-4">
+                    Incorrect: <span data-bind="text: wrongAnswers()"></span>
+                </div>
+                <div class="col-lg-4">
+                    Percent Correct: <span data-bind="text: percentage(), visible: showPercent"></span>%
+                </div>
+            </div>
 
             <section class="col-sm-8">
                 <div class="card">
@@ -32,12 +39,12 @@
             </section>
 
             <aside class="col-sm-2">
-                <input type ="button" value="NEXT" class="btn-lg" data-bind="click: nextWord()">
+                <input type ="button" value="SKIP" class="btn-lg btn-primary" data-bind="click: nextWord()">
             </aside>
         </div>
 
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="lib/knockout-3.2.0.js"></script>
 <script src="js/app.js"></script>
 </body>

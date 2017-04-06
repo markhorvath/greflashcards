@@ -20,7 +20,7 @@ ul {
     list-style-type: upper-alpha;
 }
 li {
-    border: solid #0A1612;
+    border: 1px;
     margin: 3px;
     padding-left: 5px;
 }
@@ -37,7 +37,9 @@ li:hover {
     border: solid #0A1612;
     background-color: white;
     box-shadow: 6px 6px 8px #777;
-    margin-top: 50px;
+    margin-top: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .stats {
     background-color: #F7CE3E;
@@ -45,12 +47,20 @@ li:hover {
     margin-top: 160px;
     font-size: larger;
 }
+.correct {
+    background-color: #49fb35;
+}
+.wrong {
+    color: red;
+    text-decoration: line-through;
+}
 #word {
     font-size: 24px;
     text-align: center;
 }
 #pos {
     text-align: center;
+    text-decoration-style:
 }
 
 @media screen and (orientation:landscape) {

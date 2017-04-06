@@ -1278,6 +1278,276 @@ var model = [{
         word: 'inundate',
         pos: ['verb'],
         definition: 'Flood, cover with water, overwhelm'
+    },
+    {
+        id: 215,
+        word: 'inure',
+        pos: ['verb'],
+        definition: 'Toughen up; accustom or habituate to pain, hardship, etc.'
+    },
+    {
+        id: 216,
+        word: 'invective',
+        pos: ['noun'],
+        definition: 'Violent denunciation; accusations, insults, or verbal abuse'
+    },
+    {
+        id: 217,
+        word: 'inveigle',
+        pos: ['verb'],
+        definition: 'Entice, lure; get something by flattery, cleverness, or offering incentives'
+    },
+    {
+        id: 218,
+        word: 'investiture',
+        pos: ['noun'],
+        definition: 'Investing; formally giving someone a right or title'
+    },
+    {
+        id: 219,
+        word: 'invidious',
+        pos: ['adj'],
+        definition: 'Hateful, offensive, injurious'
+    },
+    {
+        id: 220,
+        word: 'irascible',
+        pos: ['adj'],
+        definition: 'Irritable, easily angered'
+    },
+    {
+        id: 221,
+        word: 'irresolute',
+        pos: ['adj'],
+        definition: "Wavering, not sure how to proceed, not firm in one's decision making"
+    },
+    {
+        id: 222,
+        word: 'itinerant',
+        pos: ['adj'],
+        definition: 'Traveling from place to place, esp. as part of a job'
+    },
+    {
+        id: 223,
+        word: 'itinerary',
+        pos: ['noun'],
+        definition: 'Travel schedule; detailed plan for a journey'
+    },
+    {
+        id: 224,
+        word: 'jettison',
+        pos: ['verb'],
+        definition: 'Discard, cast off; throw items overboard in order to lighten a ship in an emergency'
+    },
+    {
+        id: 225,
+        word: 'jingoism',
+        pos: ['noun'],
+        definition: 'Excessive, loud patriotism and aggressive, warlike foreign policy'
+    },
+    {
+        id: 226,
+        word: 'juxtapose',
+        pos: ['verb'],
+        definition: 'Place side by side (either physically or in a metaphorical way, such as to make a comparison)'
+    },
+    {
+        id: 227,
+        word: 'kindle',
+        pos: ['verb'],
+        definition: 'Ignite, cause to begin burning; incite, arouse, inflame'
+    },
+    {
+        id: 228,
+        word: 'kinetic',
+        pos: ['adj'],
+        definition: 'Pertaining to motion'
+    },
+    {
+        id: 229,
+        word: 'knell',
+        pos: ['noun', 'verb'],
+        definition: 'The sound made by a bell for a funeral, or any sad sound or signal of a failure, death, ending, etc.; to make such a sound'
+    },
+    {
+        id: 230,
+        word: 'lachrymose',
+        pos: ['adj'],
+        definition: 'Tearful, mournful'
+    },
+    {
+        id: 231,
+        word: 'larceny',
+        pos: ['noun'],
+        definition: 'Theft'
+    },
+    {
+        id: 232,
+        word: 'largess(e)',
+        pos: ['noun'],
+        definition: 'Generosity, the giving of money or gifts (esp. with the implication that the giver is a bit superior to the recipient)'
+    },
+    {
+        id: 233,
+        word: 'latent',
+        pos: ['adj'],
+        definition: 'Potential; existing but not visible or active'
+    },
+    {
+        id: 234,
+        word: 'laudable',
+        pos: ['adj'],
+        definition: 'Worthy of praise'
+    },
+    {
+        id: 235,
+        word: 'lax',
+        pos: ['adj'],
+        definition: 'Not strict; careless, loose, slack'
+    },
+    {
+        id: 236,
+        word: 'leery',
+        pos: ['adj'],
+        definition: 'Suspicious or wary'
+    },
+    {
+        id: 237,
+        word: 'legerdemain',
+        pos: ['noun'],
+        definition: 'Slight-of-hand (magic as performed by a magician); trickery or deception'
+    },
+    {
+        id: 238,
+        word: 'lethargic',
+        pos: ['adj'],
+        definition: 'Lazy, drowsy, or sluggish'
+    },
+    {
+        id: 239,
+        word: 'licentious',
+        pos: ['adj'],
+        definition: 'Sexually unrestrained; immoral; ignoring the rules'
+    },
+    {
+        id: 240,
+        word: 'limpid',
+        pos: ['adj'],
+        definition: 'Clear, transparent; completely calm'
+    },
+    {
+        id: 241,
+        word: 'lionize',
+        pos: ['verb'],
+        definition: 'Treat like a celebrity'
+    },
+    {
+        id: 242,
+        word: 'lissome',
+        pos: ['adj'],
+        definition: 'Flexible, supple, agile'
+    },
+    {
+        id: 243,
+        word: 'listless',
+        pos: ['adj'],
+        definition: 'Spiritless, lacking interest or energy'
+    },
+    {
+        id: 244,
+        word: 'livid',
+        pos: ['adj'],
+        definition: 'Furiously angry, enraged'
+    },
+    {
+        id: 245,
+        word: 'lugubrious',
+        pos: ['adj'],
+        definition: 'Mournful, gloomy (sometimes in an exaggerated way)'
+    },
+    {
+        id: 246,
+        word: 'lumber',
+        pos: ['verb'],
+        definition: 'Walk in a heavy or clumsy way, sometimes due to being weighed down'
+    },
+    {
+        id: 247,
+        word: 'luminous',
+        pos: ['adj'],
+        definition: 'Shining, radiant, well-lit; brilliant or enlightening'
+    },
+    {
+        id: 248,
+        word: 'lurid',
+        pos: ['adj'],
+        definition: 'Gruesome or excessively vivid; sensational, shocking, unrestrained'
+    },
+    {
+        id: 249,
+        word: 'machination(s)',
+        pos: ['noun'],
+        definition: 'Crafty schemes or plots'
+    },
+    {
+        id: 250,
+        word: 'maelstrom',
+        pos: ['noun'],
+        definition: 'Any chaotic, turbulent situation; violent whirlpool'
+    },
+    {
+        id: 251,
+        word: 'magnanimous',
+        pos: ['adj'],
+        definition: 'High-minded, noble, lofty; generous in forgiving others, free of resentment'
+    },
+    {
+        id: 252,
+        word: 'magnate',
+        pos: ['noun'],
+        definition: 'Very important or influential person, esp. in business'
+    },
+    {
+        id: 253,
+        word: 'malediction',
+        pos: ['noun'],
+        definition: 'A curse'
+    },
+    {
+        id: 254,
+        word: 'malinger',
+        pos: ['verb'],
+        definition: 'Pretend to be sick, esp. to get out of work, duties, etc.'
+    },
+    {
+        id: 255,
+        word: 'manifest',
+        pos: ['adj', 'verb'],
+        definition: 'Obvious, apparent, perceptible to the eye; to show, make clear, or prove'
+    },
+    {
+        id: 256,
+        word: 'mannered',
+        pos: ['adj'],
+        definition: 'Having a particular manner, esp. an artificial one'
+    },
+    {
+        id: 257,
+        word: 'mar',
+        pos: ['verb'],
+        definition: 'Damage, spoil, ruin'
+    },
+    {
+        id: 258,
+        word: 'martinet',
+        pos: ['noun'],
+        definition: 'Person who adheres to rules extremely closely; strict disciplinarian'
+    },
+    {
+        id: 259,
+        word: 'maudlin',
+        pos: ['adj'],
+        definition: 'Excessively sentimental, showing sadness or some other emotion in a foolish or silly way'
     }
 ];
 
@@ -1300,6 +1570,7 @@ var ViewModel = function() {
     this.correctAnswers = ko.observable(this.correctCount);
     this.wrongCount = 0;
     this.wrongAnswers = ko.observable(this.wrongCount);
+    this.showPercent = ko.observable(false);
     this.percentage = ko.observable((this.correctCount / (this.correctCount + this.wrongCount)) * 100);
     this.wrongWordsArray = ko.observableArray([]);
 
@@ -1348,7 +1619,7 @@ var ViewModel = function() {
         this.getAnswers();
     };
 
-    this.checkAnswer = function() {
+    this.checkAnswer = function(event) {
         var clickedAnswer = this.toString();
         if (clickedAnswer == self.currentWord().def){
             console.log(clickedAnswer);
@@ -1358,6 +1629,7 @@ var ViewModel = function() {
             setTimeout(function() {
                 self.nextWord();
             }, 1000);
+            self.showPercent(true);
         } else {
             self.wrongCount += 1;
             self.wrongAnswers(self.wrongCount);
@@ -1365,6 +1637,7 @@ var ViewModel = function() {
             if (self.wrongWordsArray.indexOf(self.currentWord()) == -1) {
                 self.wrongWordsArray.push(self.currentWord());
             };
+            self.showPercent(true);
         };
     };
 };
