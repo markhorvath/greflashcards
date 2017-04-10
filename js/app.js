@@ -1548,6 +1548,186 @@ var model = [{
         word: 'maudlin',
         pos: ['adj'],
         definition: 'Excessively sentimental, showing sadness or some other emotion in a foolish or silly way'
+    },
+    {
+        id: 260,
+        word: 'maxim',
+        pos: ['noun'],
+        definition: 'A general truth or fundamental principle, esp. expressed as a proverb or saying'
+    },
+    {
+        id: 261,
+        word: 'mendicant',
+        pos: ['noun'],
+        definition: 'Beggar, or religious follower who lives by begging'
+    },
+    {
+        id: 262,
+        word: 'meretricious',
+        pos: ['adj'],
+        definition: 'Attractive in a vulgar or flashy way, tawdry; deceptive'
+    },
+    {
+        id: 263,
+        word: 'metaphysical',
+        pos: ['adj'],
+        definition: 'Concerned with abstract thought, related to metaphysics (branch of philosophy concerned with explaining the nature of being and of the world); very subtle or abstruse'
+    },
+    {
+        id: 264,
+        word: 'milieu',
+        pos: ['noun'],
+        definition: 'Environment, atmosphere; the environmental setting in which something happens or develops'
+    },
+    {
+        id: 265,
+        word: 'militate',
+        pos: ['verb'],
+        definition: 'Have a great effect, weigh heavily'
+    },
+    {
+        id: 266,
+        word: 'mired',
+        pos: ['adj'],
+        definition: 'Stuck, entangled (in something, like a swamp or muddy area'
+    },
+    {
+        id: 267,
+        word: 'mirth',
+        pos: ['noun'],
+        definition: 'Jollity, merriment; amusement or laughter'
+    },
+    {
+        id: 268,
+        word: 'misanthrope',
+        pos: ['noun'],
+        definition: 'Hater of humankind'
+    },
+    {
+        id: 269,
+        word: 'missive',
+        pos: ['noun'],
+        definition: 'Letter, written message'
+    },
+    {
+        id: 270,
+        word: 'modicum',
+        pos: ['noun'],
+        definition: 'A little bit or limited quantity'
+    },
+    {
+        id: 271,
+        word: 'modish',
+        pos: ['adj'],
+        definition: 'Stylish, contemporary'
+    },
+    {
+        id: 272,
+        word: 'molt',
+        pos: ['verb'],
+        definition: 'Shed or cast off, esp. to regularly shed skin, feathers, etc. (as a snake)'
+    },
+    {
+        id: 273,
+        word: 'monastic',
+        pos: ['adj'],
+        definition: 'Relating to or resembling a monastery (where monks or nuns live), esp. by being quiet, secluded, contemplative, strict, and/or lacking luxuries'
+    },
+    {
+        id: 274,
+        word: 'morose',
+        pos: ['adj'],
+        definition: 'Gloomy, sullen'
+    },
+    {
+        id: 275,
+        word: 'multifarious',
+        pos: ['adj'],
+        definition: 'Diverse, having a lot of variety'
+    },
+    {
+        id: 276,
+        word: 'munificent',
+        pos: ['adj'],
+        definition: 'Generous, giving liberally'
+    },
+    {
+        id: 277,
+        word: 'myopic',
+        pos: ['adj'],
+        definition: 'Near-sighted; lacking long-term thinking, short-sighted'
+    },
+    {
+        id: 278,
+        word: 'nadir',
+        pos: ['noun'],
+        definition: 'Lowest point'
+    },
+    {
+        id: 279,
+        word: 'neologism',
+        pos: ['noun'],
+        definition: 'New word or phrase (or a new meaning applied to an existing word or phrase'
+    },
+    {
+        id: 280,
+        word: 'neophyte',
+        pos: ['noun'],
+        definition: 'Beginner, novice; person newly converted to a religion'
+    },
+    {
+        id: 281,
+        word: 'nettle',
+        pos: ['verb'],
+        definition: 'Irritate, sting, or annoy'
+    },
+    {
+        id: 282,
+        word: 'noisome',
+        pos: ['adj'],
+        definition: 'Having an extremely offensive smell; disgusting'
+    },
+    {
+        id: 283,
+        word: 'nominal',
+        pos: ['adj'],
+        definition: 'Trivial, so small as to be unimportant; in name only, so-called'
+    },
+    {
+        id: 284,
+        word: 'nontrivial',
+        pos: ['adj'],
+        definition: 'Important or big enough to matter'
+    },
+    {
+        id: 285,
+        word: 'normative',
+        pos: ['adj'],
+        definition: 'Implying or attempting to establish a norm; expressing value judgements or telling people what to do (rather than merely describing that which is happening'
+    },
+    {
+        id: 286,
+        word: 'obdurate',
+        pos: ['adj'],
+        definition: 'Stubborn, hardhearted, hardened in wrongdoing'
+    },
+    {
+        id: 287,
+        word: 'oblique',
+        pos: ['adj'],
+        definition: 'Slanting or sloping; indirect, misleading, or evasive'
+    },
+    {
+        id: 288,
+        word: 'occlude',
+        pos: ['verb'],
+        definition: 'Stop up, close, shut in or shut off'
+    },
+    {
+        id: 289,
+        word: 'opine',
+        pos: ['verb'],
+        definition: 'Express an opinion'
     }
 ];
 

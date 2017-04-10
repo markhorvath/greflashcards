@@ -17,13 +17,13 @@
         <!-- <input type ="button" value="START" data-bind="click: startCard()"> -->
         <div class="container-fluid">
             <div class="row-fluid">
-                <div class="col-lg-4">
+                <div class="col-lg-4 stats" id="correct">
                     Correct: <span data-bind="text: correctAnswers()"></span>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 stats" id="incorrect">
                     Incorrect: <span data-bind="text: wrongAnswers()"></span>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 stats" id="percent">
                     Percent Correct: <span data-bind="text: percentage(), visible: showPercent"></span>%
                 </div>
             </div>
