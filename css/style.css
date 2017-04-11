@@ -28,16 +28,16 @@ li:hover {
     background-color: yellow;
 }
 .btn-lg {
-    margin-left: 20px;
-    margin-top: 160px;
-    background-color: #F7CE3E;
+    margin-left: 15%;
+    margin-top: 75%;
 }
 .card {
     font-size: 16px;
     border: solid #0A1612;
     background-color: white;
     box-shadow: 6px 6px 8px #777;
-    margin-top: 30px;
+    margin-top: 5%;
+    margin-left: 35%;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -69,6 +69,17 @@ li:hover {
 #percent {
 }
 
-@media screen and (orientation:landscape) {
+@media screen and (max-width: 768px) {
+
+.btn-lg {
+    margin-top: 20px;
+    margin-left: 44%;
+}
+
+.card {
+    margin-top: 10%;
+    margin-left: auto;
+}
+
 
 }
